@@ -1,0 +1,12 @@
+{
+  "name": "liny",
+  "version": "0.1.0",
+  "description": "对文本按行进行过滤清理的工具",
+  "main": "index.js",
+  "scripts": {},
+  "author": "MaXiaojun<somaxj@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "iconv-lite": "^0.4.15"
+  }
+}
