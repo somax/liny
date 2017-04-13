@@ -1,10 +1,10 @@
 {
   "name": "liny",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "对文本按行进行过滤清理的工具",
   "main": "index.js",
   "bin": {
-    "liny":"index.js"
+    "liny": "index.js"
   },
   "scripts": {},
   "author": "MaXiaojun<somaxj@163.com>",
