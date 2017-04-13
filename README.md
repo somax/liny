@@ -1,16 +1,24 @@
 # Liny
 
-使用自定义过滤器，对文本按行进行处理的工具，支自动编码转换。
+使用自定义过滤器，对文本按行进行处理的工具，支持自动编码转换成 `UTF-8` 输出。
+
+## Install
+
+```bash
+npm i -g liny
+```
 
 ## Usage
 
+### demo
+
 ```bash
-node . filter-demo  < data/demo.txt > output.txt
+echo 'line1\nline2' | liny filter-demo
 ```
 
-## Add filter
+## Custom filter
 
-在 filters 目录中添加新的过滤器 `./filters/filter-new.js`
+新建自定义过滤器： `./my-filter.js`
 
 ```js
 module.exports = function (line) {
@@ -21,11 +29,5 @@ module.exports = function (line) {
 ```
 
 ```bash
-node . filter-new  < data/demo.txt > output.txt
-```
-
-## Test filter
-
-```bash
-echo '234,abcd\n345,efg\nhijk' | node . filter-demo
+liny ./my-filter  < in.csv > out.csv
 ```
